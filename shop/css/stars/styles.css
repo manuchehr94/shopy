@@ -1,0 +1,29 @@
+.review_stars_wrap{
+  overflow: hidden;
+}
+#review_stars {
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+#review_stars input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+#review_stars input ~ label i{
+  color:#eef0f5;
+}
+#review_stars input:checked ~ label i{
+  color: #dc7356;
+}
+#review_stars label {
+  float: right;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+#review_stars label:hover i, #review_stars label:hover ~ label i{
+  color: #dc7356;
+}
